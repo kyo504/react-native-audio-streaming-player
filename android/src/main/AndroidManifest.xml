@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.allthatseries.RNAudioPlayer">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true">
+        <service
+            android:name=".AudioPlayerService"
+            android:stopWithTask="true"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+</manifest>
