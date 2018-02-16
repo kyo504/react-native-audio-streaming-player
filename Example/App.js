@@ -7,7 +7,7 @@ import {
   DeviceEventEmitter,
   Slider,
 } from 'react-native';
-import Player from 'react-native-streaming-audio-player';
+import Player from 'react-native-audio-streaming-player';
 
 const PLAYBACK_STATE = {
   STATE_NONE: 0,
