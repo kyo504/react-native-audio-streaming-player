@@ -417,5 +417,4 @@ RCT_EXPORT_METHOD(seekTo:(int) nSecond) {
     center.nowPlayingInfo = songInfo;
 }
 
-
 @end
