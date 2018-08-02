@@ -114,7 +114,15 @@ RCT_EXPORT_METHOD(seekTo:(int) nSecond) {
     [self.player seekToTime:newTime];
 }
 
+RCT_REMAP_METHOD(mediaDuration,
+                 resolver: (RCTPromiseResolveBlock)resolve
+                 rejecter: (RCTPromiseRejectBlock)reject)
+{
+    resolve([NSNumber numberWithFloat:duration]);
+}
+
 #pragma mark - Audio
+
 
 -(void) playAudio {
     [self.player play];
